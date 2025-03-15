@@ -1,0 +1,131 @@
+/* Global background color for all elements */
+* {
+    background-color: #fca4a4;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling with centered layout, border, and shadow */
+.Container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fca4a4;
+}
+
+/* Heading styling with centered text and spacing */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input container styling with spacing and label alignment */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Input field styling */
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Button styling */
+.button-group button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .Container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .input-container label {
+        font-size: 14px;
+    }
+
+    .input-container input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .button-group button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .Container {
+        max-width: 65%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .input-container label {
+        font-size: 12px;
+    }
+
+    .input-container input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .button-group button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
