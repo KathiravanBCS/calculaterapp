@@ -1,4 +1,4 @@
- Calculator App**
+ **Calculator App**
 
 #### **Project Description**  
 A fully functional calculator app built with React JS. Perform basic arithmetic operations like addition, subtraction, multiplication, and division with a sleek UI.
